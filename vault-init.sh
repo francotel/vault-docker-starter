@@ -14,7 +14,7 @@ vault login root
 vault secrets enable -path=demo -version=2 kv
 
 # write a secret to the kv store
-vault kv put demo/mysql/user username="admin" password="supersecretpassword"
+vault kv put demo/mysql/user username="admin" password="dummy"
 
 # read the secret back
 vault kv get demo/mysql/user
